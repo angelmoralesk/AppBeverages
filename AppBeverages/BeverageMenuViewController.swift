@@ -17,10 +17,10 @@ class BeverageMenuViewController : UIViewController {
 
     lazy var beverages : [Beverage] = {
         
-        let lemonade = Beverage(name: "Lemonade", image: #imageLiteral(resourceName: "lemonade"))
-        let strawBerryLemonade = Beverage(name: "Strawberry Lemonade", image: #imageLiteral(resourceName: "strawberrylemonade"))
-        let pina = Beverage(name: "Piña Colada", image: #imageLiteral(resourceName: "pinacolada"))
-        let margarita = Beverage(name: "Margarita", image: #imageLiteral(resourceName: "margarita"))
+        let lemonade = Beverage(name: "Lemonade", image: UIImage(named: "lemonade.jpeg")!)
+        let strawBerryLemonade = Beverage(name: "Strawberry Lemonade", image: UIImage(named: "strawberrylemonade.jpeg")!)
+        let pina = Beverage(name: "Piña Colada", image: UIImage(named: "pinacolada.jpeg")!)
+        let margarita = Beverage(name: "Margarita", image: UIImage(named: "margarita.jpg")!)
         
         return [lemonade,strawBerryLemonade,pina,margarita]
     }()
