@@ -16,11 +16,11 @@ struct Beverage {
 class BeverageMenuViewController : UIViewController {
 
     lazy var beverages : [Beverage] = {
-        
-        let lemonade = Beverage(name: "Lemonade", image: UIImage(named: "lemonade.jpeg")!)
-        let strawBerryLemonade = Beverage(name: "Strawberry Lemonade", image: UIImage(named: "strawberrylemonade.jpeg")!)
-        let pina = Beverage(name: "Piña Colada", image: UIImage(named: "pinacolada.jpeg")!)
-        let margarita = Beverage(name: "Margarita", image: UIImage(named: "margarita.jpg")!)
+        let bundle = Bundle(for: type(of: self))
+        let lemonade = Beverage(name: "Lemonade", image: UIImage(named: "lemonade.jpg", in: bundle, compatibleWith: nil)!)
+        let strawBerryLemonade = Beverage(name: "Strawberry Lemonade", image: UIImage(named: "strawberrylemonade.jpeg", in: bundle, compatibleWith: nil)!)
+        let pina = Beverage(name: "Piña Colada", image: UIImage(named: "pinacolada.jpeg", in: bundle, compatibleWith: nil)!)
+        let margarita = Beverage(name: "Margarita", image: UIImage(named: "margarita.jpg", in: bundle, compatibleWith: nil)!)
         
         return [lemonade,strawBerryLemonade,pina,margarita]
     }()
